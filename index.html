@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中国高校热力分布变化图</title>
+</head>
+<style>
+    html,
+    body,
+    #container {
+      width: 99%;
+      height: 99%;
+	  top:0px;
+	  left:0px;
+    }
+	#jiesha{
+		z-index=9999;
+		position:absolute;
+		top:10px;
+		left:10px;
+		background: darkcyan;
+		opacity: 0.6;
+		border:1px solid red;
+		border-radius:30px;
+		width: 300px;
+		height: 300px;
+	}
+  </style>
+<body>
+<div id="jiesha">
+<p align="center" id="title">中国高校热力分布变化图</p>
+<div>
+一、数据来源：<br>
+1.高校数据来自于学信网和教育部2019公示数据（本科）<br>
+2.位置数据利用高德API地理编码工具获取<br>
+3.高校创办时间来自于百度百科<br>
+二、内容说明：<br>
+<p id="use">&emsp;&emsp;该网页主要展示在不同历史时期的高校分布情况，采用热力图的方法展示</p>
+</div>
+<div align="center">
+<input type="submit" name="Submit" value="切换地图" onclick="dizhi()" />
+</div>
+</div>
+<iframe id="container" src="https://maplab.amap.com/share/mapv/48297eef0b125863813c04e39225d91c"></iframe>
+<script>
+	var i=1;
+	var title=["中国高校热力分布变化图","中国高校点分布变化图"];
+	var contain=["&emsp;&emsp;该网页主要展示在不同历史时期的高校分布情况，采用热力图的方法展示","&emsp;&emsp;该网页主要展示在不同历史时期的高校分布情况，采用点要素展示，点击点要素即可查看详细信息"];
+　　function dizhi(){    
+　　　　document.getElementById("container").src='https://maplab.amap.com/share/mapv/ada8ccc83251094f4c09e75c8ea08c4c';
+		document.getElementById("title").innerHTML=title[i];
+		document.getElementById("use").innerHTML=contain[i];
+		if (i==1){
+			i=0;
+		}else{
+			i=1;
+		}
+　　}
+</script>
+
+</body>
+</html>
