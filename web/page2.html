@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.2.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.2.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>地图展示</title>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+</head>
+<style>
+    #container {
+      width: 100%;
+      height: 650px;
+	  top:0px;
+	  left:0px;
+    }
+	#jiesha{
+		z-index=9999;
+		position:absolute;
+		top:200px;
+		left:10px;
+		background: white;
+		opacity: 0.6;
+		border:1px solid red;
+		border-radius:10px;
+		width: 180px;
+		height: 400px;
+	}
+  </style>
+<body>
+  
+  <section class="menu menu1 cid-sjoEgh8fXc" once="menu" id="menu1-p">
+    
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-secondary display-7" href="https://mobiri.se">中国高校分布时序变化图</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#header1-f">
+                            内容介绍</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page2.html#map1-r">地图展示</a>
+                    </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#team1-n">
+                            关于我们</a></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="map1 cid-sjpJKBNZ9P" id="map1-r">
+	
+	<div class="container">
+		<div class="qiehuan" style=""><button style="width:50%" onclick="dizhi(0)">热力图</button><button style="width:50%" onclick="dizhi(1)">点分布</button></div>
+		<iframe id="container" src="https://maplab.amap.com/share/mapv/48297eef0b125863813c04e39225d91c"></iframe> 
+	</div>
+	
+	<script>
+	var Paramstr = location.search;
+	Paramstr = Paramstr.substr(1);
+	var searchs = Paramstr.split("=");
+	//alert(searchs[1]);
+	var m=searchs[1];
+	var url=['https://maplab.amap.com/share/mapv/48297eef0b125863813c04e39225d91c','https://maplab.amap.com/share/mapv/ada8ccc83251094f4c09e75c8ea08c4c'];
+	function dizhi(num){    
+　　　　document.getElementById("container").src=url[num];
+　　};
+	if (m>0){
+		dizhi(m);
+	};
+	function ycxs(){    
+　　　　document.getElementById("jiesha").style.display="None";
+　　};
+	</script> 
+</section>
+
+<section class="footer7 cid-sjpHXNnEP0" once="footers" id="footer7-q">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2025 Coolee - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/p" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;"><a href="https://mobirise.site/d" style="color:#aaa;">This page</a> was built with Mobirise</p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  
+
+<div id="jiesha">
+<div>
+一、数据来源：<br>
+1.高校数据来自于学信网和教育部2019公示数据（本科）<br>
+2.位置数据利用高德API地理编码工具获取<br>
+3.高校创办时间来自于百度百科<br>
+二、内容说明：<br>
+&emsp;&emsp;该地图主要展示在不同历史时期的高校分布情况，采用热力图/点分布两种方法展示，下述时间轴显示年份；在点分布图中，可点击“点”要素查看高校详细信息。
+</div><div id="xy" style="position: absolute;right:-14px;top:200px;background:#0f0;margin-left:10px;" onclick="ycxs()"><</div>
+</div>
+  
+</body>
+</html>
